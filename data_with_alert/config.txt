@@ -1,0 +1,1 @@
+499747986594us-east-1:5c7445eb-0200-4b5b-a40b-e93bdcab1fe1arn:aws:iam::499747986594:role/Cognito_MTAUnauth_Role
