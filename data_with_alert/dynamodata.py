@@ -11,7 +11,6 @@ from threading import Thread
 import boto3
 from boto3.dynamodb.conditions import Key,Attr
 
-# sys.path.append('../utils')
 import tripupdate
 import vehicle
 import alert
@@ -21,6 +20,7 @@ import aws
 import boto
 import boto.dynamodb2
 from boto.dynamodb2.table import Table
+from botocore.exceptions import ClientError
 
 import threading
 import time
@@ -29,7 +29,7 @@ from aws import getResource
 from aws import getClient
 
 TIME_INTERVAL_ADD = 80
-DYNAMODB_TABLE_NAME = 'Alerttt'
+DYNAMODB_TABLE_NAME = 'Alert1'
 
 
 def add_data():
@@ -47,20 +47,35 @@ def add_data():
         tripUpdates = newmta.getTripUpdates()
         for update in tripUpdates:
             cnt += 1
-            table_dynamo.put_item(Item={
-                'uid': str(cnt),
-                'batch': batch,
-                'tripId': str(update.tripId),
-                'routeId': str(update.routeId),
-                'startDate': str(update.startDate),
-                'direction': str(update.direction),
-                'futureStops' : str(update.futureStops),
-                'timestamp' : str(update.timeStamp),
-                'currentStopId' : str(update.currentStopId),
-                'currentStopStatus' : str(update.currentStopStatus),
-                'vehicleTimeStamp' : str(update.vehicleTimeStamp),
-                'alert' : str(update.alert)
-            })
+            try:
+                table_dynamo.put_item(Item={
+                    'uid': str(cnt),
+                    'batch': batch,
+                    'tripId': str(update.tripId),
+                    'routeId': str(update.routeId),
+                    'startDate': str(update.startDate),
+                    'direction': str(update.direction),
+                    'futureStops' : str(update.futureStops),
+                    'timestamp' : str(update.timeStamp),
+                    'currentStopId' : str(update.currentStopId),
+                    'currentStopStatus' : str(update.currentStopStatus),
+                    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+                    'alert' : str(update.alert)
+                })
+            except ClientError as e:
+                print e.response['Error']['Message']
+                print cnt
+                print str(update.tripId)
+                print str(update.routeId)
+                print str(update.startDate)
+                print str(update.direction)
+                print str(update.futureStops)
+                print str(update.timeStamp)
+                print str(update.currentStopId)
+                print str(update.currentStopStatus)
+                print str(update.vehicleTimeStamp)
+                print str(update.alert)
+
 
         if batch % 40 == 0:
             client = getClient('dynamodb', 'us-east-1')
