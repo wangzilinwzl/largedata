@@ -25,9 +25,107 @@
 
         <div id="searchpart" class="container">
         <br><br>
-        <input type="text" class="textbox" id="startpoint" placeholder="Input your start point."><br><br>
-        <input type="text" class="textbox" id="endpoint" placeholder="Input your destination point.">
-        <input type="button" id="search" value="Get Route">
+        <p><b>Choose subway line:</b></p>
+            <select id="dropdown1">
+                <option value="1" selected="true">line 1</option>
+                <option value="2">line 2</option>
+                <option value="3">line 3</option>
+                <option value="4">line 4</option>
+                <option value="5">line 5</option>
+                <option value="6">line 6</option>
+            </select>
+            <input type="button" id="submit" value="Submit">
+            <br><br>
+
+
+            <p><b>Choose your start point:</b></p>
+            <select id="dropdown2">
+                <option value="101" selected="true">Van Cortlandt Park - 242 St</option>
+                <option value="103">238 St</option>
+                <option value="104">231 St</option>
+                <option value="106">Marble Hill - 225 St</option>
+                <option value="107">215 St</option>
+                <option value="108">207 St</option>
+                <option value="109">Dyckman St</option>
+                <option value="110">191 St</option>
+                <option value="111">181 St</option>
+                <option value="112">168 St - Washington Hts</option>
+                <option value="113">157 St</option>
+                <option value="114">145 St</option>
+                <option value="115">137 St - City College</option>
+                <option value="116">125 St</option>
+                <option value="117">116 St - Columbia University</option>
+                <option value="118">Cathedral Pkwy</option>
+                <option value="119">103 St</option>
+                <option value="120">96 St</option>
+                <option value="121">86 St</option>
+                <option value="122">79 St</option>
+                <option value="123">72 St</option>
+                <option value="124">66 St - Lincoln Center</option>
+                <option value="125">59 St - Columbus Circle</option>
+                <option value="126">50 St</option>
+                <option value="127">Time Square - 42 St</option>
+                <option value="128">Penn Station - 34 St</option>
+                <option value="129">28 St</option>
+                <option value="130">23 St</option>
+                <option value="131">18 St</option>
+                <option value="132">14 St</option>
+                <option value="133">Christopher St - Sheridan Square</option>
+                <option value="134">Houston St</option>
+                <option value="135">Canal St</option>
+                <option value="136">Franklin St</option>
+                <option value="137">Chambers St</option>
+                <option value="138">Cortlandt St</option>
+                <option value="139">Rector St</option>
+                <option value="140">South Ferry Loop</option>
+            </select><br><br>
+
+            <p><b>Choose your destination point:</b></p>
+            <select id="dropdown3">
+                <option value="101" selected="true">Van Cortlandt Park - 242 St</option>
+                <option value="103">238 St</option>
+                <option value="104">231 St</option>
+                <option value="106">Marble Hill - 225 St</option>
+                <option value="107">215 St</option>
+                <option value="108">207 St</option>
+                <option value="109">Dyckman St</option>
+                <option value="110">191 St</option>
+                <option value="111">181 St</option>
+                <option value="112">168 St - Washington Hts</option>
+                <option value="113">157 St</option>
+                <option value="114">145 St</option>
+                <option value="115">137 St - City College</option>
+                <option value="116">125 St</option>
+                <option value="117">116 St - Columbia University</option>
+                <option value="118">Cathedral Pkwy</option>
+                <option value="119">103 St</option>
+                <option value="120">96 St</option>
+                <option value="121">86 St</option>
+                <option value="122">79 St</option>
+                <option value="123">72 St</option>
+                <option value="124">66 St - Lincoln Center</option>
+                <option value="125">59 St - Columbus Circle</option>
+                <option value="126">50 St</option>
+                <option value="127">Time Square - 42 St</option>
+                <option value="128">Penn Station - 34 St</option>
+                <option value="129">28 St</option>
+                <option value="130">23 St</option>
+                <option value="131">18 St</option>
+                <option value="132">14 St</option>
+                <option value="133">Christopher St - Sheridan Square</option>
+                <option value="134">Houston St</option>
+                <option value="135">Canal St</option>
+                <option value="136">Franklin St</option>
+                <option value="137">Chambers St</option>
+                <option value="138">Cortlandt St</option>
+                <option value="139">Rector St</option>
+                <option value="140">South Ferry Loop</option>
+            </select>
+
+<!--         <input type="text" class="textbox" id="startpoint" placeholder="Input your start point."><br><br>
+        <input type="text" class="textbox" id="endpoint" placeholder="Input your destination point."> -->
+        <input type="button" id="search" value="Get Route" onclick="compute()">
+        <input type="text" id="show">
         </div>
 
         <div id="map"></div>
@@ -41,6 +139,7 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
 /jquery/1.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://api.jquery.com/jQuery.ajax/"></script>
     <script type="text/javascript">
         function initMap(){
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -59,6 +158,24 @@
       //     position: uluru,
       //     map: map
       // });
+        }
+
+
+        function compute(){
+            var line=document.getElementById("dropdown1").value;
+            var sPoint=document.getElementById("dropdown2").value;
+            var ePoint=document.getElementById("dropdown3").value;
+            // alert(line+","+sPoint+","+ePoint+",");
+            $.ajax({
+                type: "POST",
+                crossDomain: "true",
+                url: "./test.py",
+                data: {param: line,sPoint,ePoint}
+            }).done(function(e){
+                alert(c);
+            });
+            // var res=openSomehowPythonInterpreter("./test.py","func(x,y,z");
+
         }
 
 
