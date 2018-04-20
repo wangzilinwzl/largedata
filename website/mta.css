@@ -24,21 +24,29 @@
 }
 
 #searchpart{
-	margin-top: 50px;
+	margin-top: 40px;
 	margin-left: 270px;
-	background-color: #b0c4de;
-	height: 150px;
+	background-image: url(p3.jpg);
+/*	background-color: #b0c4de;*/
+	height: 300px;
 	width: 1040px;
+	background-size: 100% 100%;
+/*	background-size: cover;*/
+	background-repeat:no-repeat;
+}
+
+#searchpart p{
+	font-size: 20px;
 }
 
 #searchpart .textbox{
 	width: 500px;
 }
 
-#search{
-	margin-left: 10px;
+/*#search{
+	margin-left: 50px;
 }
-
+*/
 #map{
 	margin-top: 50px;
 	height: 1000px;
