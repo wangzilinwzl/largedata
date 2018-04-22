@@ -139,7 +139,8 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
 /jquery/1.4.0/jquery.min.js"></script>
-<script type="text/javascript" src="http://api.jquery.com/jQuery.ajax/"></script>
+<!-- <script type="text/javascript" src="http://api.jquery.com/jQuery.ajax/"></script> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
         function initMap(){
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -160,21 +161,13 @@
       // });
         }
 
-
-        function compute(){
             var line=document.getElementById("dropdown1").value;
             var sPoint=document.getElementById("dropdown2").value;
             var ePoint=document.getElementById("dropdown3").value;
-            // alert(line+","+sPoint+","+ePoint+",");
-            $.ajax({
-                type: "POST",
-                crossDomain: "true",
-                url: "./test.py",
-                data: {param: line,sPoint,ePoint}
-            }).done(function(e){
-                alert(c);
-            });
-            // var res=openSomehowPythonInterpreter("./test.py","func(x,y,z");
+
+
+        function compute(){
+            
 
         }
 
