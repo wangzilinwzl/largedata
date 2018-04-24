@@ -25,11 +25,11 @@
 
         <div id="searchpart" class="container">
 
-<!--         <form action="/" method="post" role="form"> -->
-
+<!--         <form action="/" method="post" role="form">
+ -->
         <br><br>
         <p><b>Choose subway line:</b></p>
-            <select id="dropdown1" name="l">
+            <select id="dropdown1">
                 <option value="1" selected="true">line 1</option>
                 <option value="2">line 2</option>
                 <option value="3">line 3</option>
@@ -42,7 +42,7 @@
 
 
             <p><b>Choose your start point:</b></p>
-            <select id="dropdown2" name="s">
+            <select id="dropdown2">
                 <option value="101" selected="true">Van Cortlandt Park - 242 St</option>
                 <option value="103">238 St</option>
                 <option value="104">231 St</option>
@@ -84,7 +84,7 @@
             </select><br><br>
 
             <p><b>Choose your destination point:</b></p>
-            <select id="dropdown3" name="e">
+            <select id="dropdown3">
                 <option value="101" selected="true">Van Cortlandt Park - 242 St</option>
                 <option value="103">238 St</option>
                 <option value="104">231 St</option>
@@ -127,11 +127,11 @@
 
 <!--         <input type="text" class="textbox" id="startpoint" placeholder="Input your start point."><br><br>
         <input type="text" class="textbox" id="endpoint" placeholder="Input your destination point."> -->
-        <input type="button" id="search" value="Get Route" onclick="compute()">
+        <input type="button" id="search" value="Get Route">
         <input type="text" id="show">
 
-<!--         </form>
- -->
+<!--         </form> -->
+
         </div>
 
         <div id="map"></div>
@@ -143,10 +143,12 @@
 
     </body>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
-/jquery/1.4.0/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script> -->
 <!-- <script type="text/javascript" src="http://api.jquery.com/jQuery.ajax/"></script> -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         function initMap(){
             var map = new google.maps.Map(document.getElementById('map'), {
@@ -167,39 +169,52 @@
       // });
         }
 
-            var line=document.getElementById("dropdown1").value;
-            var sPoint=document.getElementById("dropdown2").value;
-            var ePoint=document.getElementById("dropdown3").value;
+            // var line=document.getElementById("dropdown1").value;
+            // var sPoint=document.getElementById("dropdown2").value;
+            // var ePoint=document.getElementById("dropdown3").value;
 
             // var temp='{{temp|tojson}}'
 
 
         // var data={
-        //     line,sPoint,ePoint
+        //     'line':$('#dropdown1').val(),
+        //     'sPoint':$('#dropdown2').val(),
+        //     'ePoint':$('#dropdown3').val()
         // };
 
-        // function compute(){
-        //     // alert(line);
-        //     alert(data);
-        // }
+        // // function compute(){
+        // //     // alert(line);
+        // //     alert(data);
+        // // }
 
 
-        function compute(){
+    $(function(){
+        $('#search').click(function(){
             $.ajax({
-                url:'/testpy',
-                data:{line,sPoint,ePoint},
-                type:'POST',
-                success:function(response){
+                url: '/testpy',
+                data:{
+                    a: $('#dropdown1').val(),
+                    b: $('#dropdown2').val(),
+                    c: $('#dropdown3').val()
+                },
+                // data:{line,sPoint,ePoint},
+                dataType: 'JSON',
+                type: 'GET',
+                success: function(data){
                     // var pyvar={{pyvar}};
                     // alert(pyvar);
-                    alert(response);
+                    // res=data.result;
+                    // alert(res);
+                    $("#show").val()=data.result;
+                    // $("#result").html(data.result);
                 },
-                error:function(error){
+                error: function(error){
                     alert('error');
                 }
             });
 
-        }
+        });
+    });
 
 
 
