@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MTA Route Optimization</title>
+        <meta charset="utf-8">
+
+        <!-- add Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- add CSS -->
+        <link href="mta.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+    <body>
+        <div id="header">
+            <img id="img1" src="p1.jpg" height="200" width="200" />
+            
+            <div id="title">
+                <h1><b>Route Optimization and Visualization of New York City Subway</b></h1><br>
+                <p>Large Data Stream Project</p>
+                <p>Lei Shi (ls3439) | Zilin Wang (zw2423) | Ang Li (al3699)</p>
+            </div>
+        </div>
+
+        <div id="searchpart" class="container">
+
+<!--         <form action="/" method="post" role="form"> -->
+
+        <br><br>
+        <p><b>Choose subway line:</b></p>
+            <select id="dropdown1" name="l">
+                <option value="1" selected="true">line 1</option>
+                <option value="2">line 2</option>
+                <option value="3">line 3</option>
+                <option value="4">line 4</option>
+                <option value="5">line 5</option>
+                <option value="6">line 6</option>
+            </select>
+            <input type="button" id="submit" value="Submit">
+            <br><br>
+
+
+            <p><b>Choose your start point:</b></p>
+            <select id="dropdown2" name="s">
+                <option value="101" selected="true">Van Cortlandt Park - 242 St</option>
+                <option value="103">238 St</option>
+                <option value="104">231 St</option>
+                <option value="106">Marble Hill - 225 St</option>
+                <option value="107">215 St</option>
+                <option value="108">207 St</option>
+                <option value="109">Dyckman St</option>
+                <option value="110">191 St</option>
+                <option value="111">181 St</option>
+                <option value="112">168 St - Washington Hts</option>
+                <option value="113">157 St</option>
+                <option value="114">145 St</option>
+                <option value="115">137 St - City College</option>
+                <option value="116">125 St</option>
+                <option value="117">116 St - Columbia University</option>
+                <option value="118">Cathedral Pkwy</option>
+                <option value="119">103 St</option>
+                <option value="120">96 St</option>
+                <option value="121">86 St</option>
+                <option value="122">79 St</option>
+                <option value="123">72 St</option>
+                <option value="124">66 St - Lincoln Center</option>
+                <option value="125">59 St - Columbus Circle</option>
+                <option value="126">50 St</option>
+                <option value="127">Time Square - 42 St</option>
+                <option value="128">Penn Station - 34 St</option>
+                <option value="129">28 St</option>
+                <option value="130">23 St</option>
+                <option value="131">18 St</option>
+                <option value="132">14 St</option>
+                <option value="133">Christopher St - Sheridan Square</option>
+                <option value="134">Houston St</option>
+                <option value="135">Canal St</option>
+                <option value="136">Franklin St</option>
+                <option value="137">Chambers St</option>
+                <option value="138">Cortlandt St</option>
+                <option value="139">Rector St</option>
+                <option value="140">South Ferry Loop</option>
+            </select><br><br>
+
+            <p><b>Choose your destination point:</b></p>
+            <select id="dropdown3" name="e">
+                <option value="101" selected="true">Van Cortlandt Park - 242 St</option>
+                <option value="103">238 St</option>
+                <option value="104">231 St</option>
+                <option value="106">Marble Hill - 225 St</option>
+                <option value="107">215 St</option>
+                <option value="108">207 St</option>
+                <option value="109">Dyckman St</option>
+                <option value="110">191 St</option>
+                <option value="111">181 St</option>
+                <option value="112">168 St - Washington Hts</option>
+                <option value="113">157 St</option>
+                <option value="114">145 St</option>
+                <option value="115">137 St - City College</option>
+                <option value="116">125 St</option>
+                <option value="117">116 St - Columbia University</option>
+                <option value="118">Cathedral Pkwy</option>
+                <option value="119">103 St</option>
+                <option value="120">96 St</option>
+                <option value="121">86 St</option>
+                <option value="122">79 St</option>
+                <option value="123">72 St</option>
+                <option value="124">66 St - Lincoln Center</option>
+                <option value="125">59 St - Columbus Circle</option>
+                <option value="126">50 St</option>
+                <option value="127">Time Square - 42 St</option>
+                <option value="128">Penn Station - 34 St</option>
+                <option value="129">28 St</option>
+                <option value="130">23 St</option>
+                <option value="131">18 St</option>
+                <option value="132">14 St</option>
+                <option value="133">Christopher St - Sheridan Square</option>
+                <option value="134">Houston St</option>
+                <option value="135">Canal St</option>
+                <option value="136">Franklin St</option>
+                <option value="137">Chambers St</option>
+                <option value="138">Cortlandt St</option>
+                <option value="139">Rector St</option>
+                <option value="140">South Ferry Loop</option>
+            </select>
+
+<!--         <input type="text" class="textbox" id="startpoint" placeholder="Input your start point."><br><br>
+        <input type="text" class="textbox" id="endpoint" placeholder="Input your destination point."> -->
+        <input type="button" id="search" value="Get Route" onclick="compute()">
+        <input type="text" id="show">
+
+<!--         </form>
+ -->
+        </div>
+
+        <div id="map"></div>
+
+        <div id="footer">
+            <p>Route Optimization and Visualization of New York City Subway</p>
+            <p>E-mail: zw2423@columbia.edu</p>
+        </div> 
+
+    </body>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs
+/jquery/1.4.0/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="http://api.jquery.com/jQuery.ajax/"></script> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function initMap(){
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: {lat: 34.04924594193164, lng: -118.24104309082031}
+            });
+
+            var trafficLayer = new google.maps.TrafficLayer();
+            trafficLayer.setMap(map);
+      //   var uluru = {lat: -25.363, lng: 131.044};
+      //   var map = new google.maps.Map(document.getElementById('map'), {
+      //     zoom: 4,
+      //     center: uluru
+      // });
+      //   var marker = new google.maps.Marker({
+      //     position: uluru,
+      //     map: map
+      // });
+        }
+
+            var line=document.getElementById("dropdown1").value;
+            var sPoint=document.getElementById("dropdown2").value;
+            var ePoint=document.getElementById("dropdown3").value;
+
+            // var temp='{{temp|tojson}}'
+
+
+        // var data={
+        //     line,sPoint,ePoint
+        // };
+
+        // function compute(){
+        //     // alert(line);
+        //     alert(data);
+        // }
+
+
+        function compute(){
+            $.ajax({
+                url:'/testpy',
+                data:{line,sPoint,ePoint},
+                type:'POST',
+                success:function(response){
+                    // var pyvar={{pyvar}};
+                    // alert(pyvar);
+                    alert(response);
+                },
+                error:function(error){
+                    alert('error');
+                }
+            });
+
+        }
+
+
+
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjd5SBNpfG7y0DYdgffjrXU5vQiKMv5jk&callback=initMap">
+    </script>
+
+    </html>
