@@ -1,0 +1,2389 @@
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+/Users/shilei/MTA/website/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+/Users/shilei/MTA/website_test/utils/mtaUpdates.py:42: RuntimeWarning: Unexpected end-group tag: Not all data was converted
+  d = feed.ParseFromString(response.read())
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
+adding data starts
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Error while connecting to mta server <urlopen error [Errno 8] nodename nor servname provided, or not known>
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+I have added data for 0 times
+Traceback (most recent call last):
+  File "dynamodata.py", line 64, in <module>
+    add_data()
+  File "dynamodata.py", line 54, in add_data
+    'vehicleTimeStamp' : str(update.vehicleTimeStamp),
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/shilei/anaconda3/envs/MTA/lib/python2.7/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the PutItem operation: The security token included in the request is expired
