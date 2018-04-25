@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MTA Route Optimization</title>
+        <meta charset="utf-8">
+
+        <!-- add Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- add CSS -->
+<!--         <link href="mta.css" rel="stylesheet" type="text/css"> -->
+        <link href="{{url_for('static',filename='mta.css')}}" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="img1" class="container"></div>
+            
+            <div id="title">
+                <h1><b>Route Optimization and Visualization of New York City Subway</b></h1><br>
+                <p>Large Data Stream Project</p>
+                <p>Lei Shi (ls3439) | Zilin Wang (zw2423) | Ang Li (al3699)</p>
+            </div>
+        </div>
+
+        <div id="searchpart" class="container">
+
+<!--         <form action="/" method="post" role="form">
+ -->
+        <br><br>
+        <p><b>Choose subway line:</b></p>
+            <select id="dropdown1">
+                <option value="1" selected="true">line 1</option>
+                <option value="2">line 2</option>
+                <option value="3">line 3</option>
+                <option value="4">line 4</option>
+                <option value="5">line 5</option>
+                <option value="6">line 6</option>
+            </select>
+            <input type="button" id="submit" value="Submit">
+            <br><br>
+
+
+            <p><b>Choose your start point:</b></p>
+            <select id="dropdown2">
+                <option value="101" selected="true">Van Cortlandt Park - 242 St</option>
+                <option value="103">238 St</option>
+                <option value="104">231 St</option>
+                <option value="106">Marble Hill - 225 St</option>
+                <option value="107">215 St</option>
+                <option value="108">207 St</option>
+                <option value="109">Dyckman St</option>
+                <option value="110">191 St</option>
+                <option value="111">181 St</option>
+                <option value="112">168 St - Washington Hts</option>
+                <option value="113">157 St</option>
+                <option value="114">145 St</option>
+                <option value="115">137 St - City College</option>
+                <option value="116">125 St</option>
+                <option value="117">116 St - Columbia University</option>
+                <option value="118">Cathedral Pkwy</option>
+                <option value="119">103 St</option>
+                <option value="120">96 St</option>
+                <option value="121">86 St</option>
+                <option value="122">79 St</option>
+                <option value="123">72 St</option>
+                <option value="124">66 St - Lincoln Center</option>
+                <option value="125">59 St - Columbus Circle</option>
+                <option value="126">50 St</option>
+                <option value="127">Time Square - 42 St</option>
+                <option value="128">Penn Station - 34 St</option>
+                <option value="129">28 St</option>
+                <option value="130">23 St</option>
+                <option value="131">18 St</option>
+                <option value="132">14 St</option>
+                <option value="133">Christopher St - Sheridan Square</option>
+                <option value="134">Houston St</option>
+                <option value="135">Canal St</option>
+                <option value="136">Franklin St</option>
+                <option value="137">Chambers St</option>
+                <option value="138">Cortlandt St</option>
+                <option value="139">Rector St</option>
+                <option value="140">South Ferry Loop</option>
+            </select>
+
+            <select id="dropdown2_1">
+                <option value="201" selected="true">Wakefield - 241 St</option>
+                <option value="204">Nereid Av</option>
+                <option value="205">233 St</option>
+                <option value="206">225 St</option>
+                <option value="207">219 St</option>
+                <option value="208">Gun Hill Rd</option>
+                <option value="209">Burke Av</option>
+                <option value="210">Allerton Av</option>
+                <option value="211">Pelham Pkwy</option>
+                <option value="212">Bronx Park East</option>
+                <option value="213">E 180 St</option>
+                <option value="214">West Farms Sq - E Tremont Av</option>
+                <option value="215">174 St</option>
+                <option value="216">Freeman St</option>
+                <option value="217">Simpson St</option>
+                <option value="218">Intervale Av</option>
+                <option value="219">Prospect Av</option>
+                <option value="220">Jackson Av</option>
+                <option value="221">3 Av - 149 St</option>
+                <option value="222">149 St - Grand Concourse</option>
+                <option value="224">135 St</option>
+                <option value="225">125 St</option>
+                <option value="226">116 St</option>
+                <option value="227">Central Park North (110 St)</option>
+                <option value="120">96 St</option>
+                <option value="121">86 St</option>
+                <option value="122">79 St</option>
+                <option value="123">72 St</option>
+                <option value="124">66 St - Lincoln Center</option>
+                <option value="125">59 St - Columbus Circle</option>
+                <option value="126">50 St</option>
+                <option value="127">Time Squre - 42 St</option>
+                <option value="128">34 St - Penn Station</option>
+                <option value="129">28 St</option>
+                <option value="130">23 St</option>
+                <option value="131">18 St</option>
+                <option value="132">14 St</option>
+                <option value="133">Christopher St - Sheridan Sq</option>
+                <option value="134">Houston St</option>
+                <option value="135">Canal St</option>
+                <option value="136">Franklin St</option>
+                <option value="137">Chambers St</option>
+                <option value="228">Park PI</option>
+                <option value="229">Fulton St</option>
+                <option value="230">Wall St</option>
+                <option value="231">Clark St</option>
+                <option value="232">Borough Hall</option>
+                <option value="233">Hoyt St</option>
+                <option value="234">Nevins St</option>
+                <option value="235">Atlantic Av - Barclays Ctr</option>
+                <option value="236">Bergen St</option>
+                <option value="237">Grand Army Plaza</option>
+                <option value="238">Eastern Pkwy - Brooklyn Museum</option>
+                <option value="239">Franklin Av</option>
+                <option value="241">President St</option>
+                <option value="242">Sterling St</option>
+                <option value="243">Winthrop St</option>
+                <option value="244">Church Av</option>
+                <option value="245">Beverly Rd</option>
+                <option value="246">Newkirk Av</option>
+                <option value="247">Flatbush Av - Brooklyn College</option>
+            </select>
+
+            <select id="dropdown3_1">
+                <option value="301" selected="true">Harlem - 148 St</option>
+                <option value="302">145 St</option>
+                <option value="224">135 St</option>
+                <option value="225">125 St</option>
+                <option value="226">116 St</option>
+                <option value="227">Central Park North (110 St)</option>
+                <option value="120">96 St</option>
+                <option value="123">72 St</option>
+                <option value="127">Time Square - 42 St</option>
+                <option value="128">34 St - Penn Station</option>
+                <option value="132">14 St</option>
+                <option value="137">Chambers St</option>
+                <option value="228">Park PI</option>
+                <option value="229">Fulton St</option>
+                <option value="230">Wall St</option>
+                <option value="231">Clark St</option>
+                <option value="232">Borough Hall</option>
+                <option value="233">Hoyt St</option>
+                <option value="234">Nevins St</option>
+                <option value="235">Atlantic Av - Barclays Ctr</option>
+                <option value="236">Bergen St</option>
+                <option value="237">Grand Army Plaza</option>
+                <option value="238">Eastern Pkwy - Brooklyn Museum</option>
+                <option value="239">Franklin Av</option>
+                <option value="248">Nostrand Av</option>
+                <option value="249">Kingston Av</option>
+                <option value="250">Crown Hts - Utica Av</option>
+                <option value="251">Sutter Av - Rutland Rd</option>
+                <option value="252">Saratoga Av</option>
+                <option value="253">Rockaway Av</option>
+                <option value="254">Junius St</option>
+                <option value="255">Pennsylvania Av</option>
+                <option value="256">Van Siclen Av</option>
+                <option value="257">New Lots Av</option>
+            </select>
+
+            <select id="dropdown4_1">
+                <option value="401" selected="true">Woodlawn</option>
+                <option value="402">Mosholu Pkwy</option>
+                <option value="405">Bedford Park Blvd - Lehman College</option>
+                <option value="406">Kingsbridge Rd</option>
+                <option value="407">Fordham Rd</option>
+                <option value="408">183 St</option>
+                <option value="409">Burnside Av</option>
+                <option value="410">176 St</option>
+                <option value="411">Mt Eden Av</option>
+                <option value="412">170 St</option>
+                <option value="413">167 St</option>
+                <option value="414">161 St - Yankee Stadium</option>
+                <option value="415">149 St - Grand Concourse</option>
+                <option value="416">138 St</option>
+                <option value="621">125 St</option>
+                <option value="622">116 St</option>
+                <option value="623">110 St</option>
+                <option value="624">103 St</option>
+                <option value="625">96 St</option>
+                <option value="626">86 St</option>
+                <option value="627">77 St</option>
+                <option value="628">68 St - Hunter College</option>
+                <option value="629">59 St</option>
+                <option value="630">51 St</option>
+                <option value="631">Grand Central - 42 St</option>
+                <option value="632">33 St</option>
+                <option value="633">28 St</option>
+                <option value="634">23 St</option>
+                <option value="635">14 St - Union Sq</option>
+                <option value="636">Astor PI</option>
+                <option value="637">Bleecker St</option>
+                <option value="638">Spring St</option>
+                <option value="639">Canal St</option>
+                <option value="640">Brooklyn Bridge - City Hall</option>
+            </select>
+
+            <select id="dropdown6_1">
+                <option value="601" selected="true">Pelham Bay Park</option>
+                <option value="602">Buhre Av</option>
+                <option value="603">Middletown Rd</option>
+                <option value="604">Westchester Sq - E Tremont Av</option>
+                <option value="606">Zerega Av</option>
+                <option value="607">Castle Hill Av</option>
+                <option value="608">Parkchester</option>
+                <option value="609">St Lawrence Av</option>
+                <option value="610">Morrison Av - Sound View</option>
+                <option value="611">Elder Av</option>
+                <option value="612">Whitlock Av</option>
+                <option value="613">Hunts Point Av</option>
+                <option value="614">Longwood Av</option>
+                <option value="615">E 149 St</option>
+                <option value="616">E 143 St - St Mary's St</option>
+                <option value="617">Cypress Av</option>
+                <option value="618">Brook Av</option>
+                <option value="619">3 Av - 138 St</option>
+                <option value="621">125 St</option>
+                <option value="622">116 St</option>
+                <option value="623">110 St</option>
+                <option value="624">103 St</option>
+                <option value="625">96 St</option>
+                <option value="626">86 St</option>
+                <option value="627">77 St</option>
+                <option value="628">68 St - Hunter College</option>
+                <option value="629">59 St</option>
+                <option value="630">51 St</option>
+                <option value="631">Grand Central - 42 St</option>
+                <option value="632">33 St</option>
+                <option value="633">28 St</option>
+                <option value="634">23 St</option>
+                <option value="635">14 St - Union Sq</option>
+                <option value="636">Astor PI</option>
+                <option value="637">Bleecker St</option>
+                <option value="638">Spring St</option>
+                <option value="639">Canal St</option>
+                <option value="640">Brooklyn Bridge - City Hall</option>
+            </select>
+
+            <br><br>
+
+            <p><b>Choose your destination point:</b></p>
+            <select id="dropdown3">
+                <option value="101" selected="true">Van Cortlandt Park - 242 St</option>
+                <option value="103">238 St</option>
+                <option value="104">231 St</option>
+                <option value="106">Marble Hill - 225 St</option>
+                <option value="107">215 St</option>
+                <option value="108">207 St</option>
+                <option value="109">Dyckman St</option>
+                <option value="110">191 St</option>
+                <option value="111">181 St</option>
+                <option value="112">168 St - Washington Hts</option>
+                <option value="113">157 St</option>
+                <option value="114">145 St</option>
+                <option value="115">137 St - City College</option>
+                <option value="116">125 St</option>
+                <option value="117">116 St - Columbia University</option>
+                <option value="118">Cathedral Pkwy</option>
+                <option value="119">103 St</option>
+                <option value="120">96 St</option>
+                <option value="121">86 St</option>
+                <option value="122">79 St</option>
+                <option value="123">72 St</option>
+                <option value="124">66 St - Lincoln Center</option>
+                <option value="125">59 St - Columbus Circle</option>
+                <option value="126">50 St</option>
+                <option value="127">Time Square - 42 St</option>
+                <option value="128">Penn Station - 34 St</option>
+                <option value="129">28 St</option>
+                <option value="130">23 St</option>
+                <option value="131">18 St</option>
+                <option value="132">14 St</option>
+                <option value="133">Christopher St - Sheridan Square</option>
+                <option value="134">Houston St</option>
+                <option value="135">Canal St</option>
+                <option value="136">Franklin St</option>
+                <option value="137">Chambers St</option>
+                <option value="138">Cortlandt St</option>
+                <option value="139">Rector St</option>
+                <option value="140">South Ferry Loop</option>
+            </select>
+
+            <select id="dropdown2_2">
+                <option value="201" selected="true">Wakefield - 241 St</option>
+                <option value="204">Nereid Av</option>
+                <option value="205">233 St</option>
+                <option value="206">225 St</option>
+                <option value="207">219 St</option>
+                <option value="208">Gun Hill Rd</option>
+                <option value="209">Burke Av</option>
+                <option value="210">Allerton Av</option>
+                <option value="211">Pelham Pkwy</option>
+                <option value="212">Bronx Park East</option>
+                <option value="213">E 180 St</option>
+                <option value="214">West Farms Sq - E Tremont Av</option>
+                <option value="215">174 St</option>
+                <option value="216">Freeman St</option>
+                <option value="217">Simpson St</option>
+                <option value="218">Intervale Av</option>
+                <option value="219">Prospect Av</option>
+                <option value="220">Jackson Av</option>
+                <option value="221">3 Av - 149 St</option>
+                <option value="222">149 St - Grand Concourse</option>
+                <option value="224">135 St</option>
+                <option value="225">125 St</option>
+                <option value="226">116 St</option>
+                <option value="227">Central Park North (110 St)</option>
+                <option value="120">96 St</option>
+                <option value="121">86 St</option>
+                <option value="122">79 St</option>
+                <option value="123">72 St</option>
+                <option value="124">66 St - Lincoln Center</option>
+                <option value="125">59 St - Columbus Circle</option>
+                <option value="126">50 St</option>
+                <option value="127">Time Squre - 42 St</option>
+                <option value="128">34 St - Penn Station</option>
+                <option value="129">28 St</option>
+                <option value="130">23 St</option>
+                <option value="131">18 St</option>
+                <option value="132">14 St</option>
+                <option value="133">Christopher St - Sheridan Sq</option>
+                <option value="134">Houston St</option>
+                <option value="135">Canal St</option>
+                <option value="136">Franklin St</option>
+                <option value="137">Chambers St</option>
+                <option value="228">Park PI</option>
+                <option value="229">Fulton St</option>
+                <option value="230">Wall St</option>
+                <option value="231">Clark St</option>
+                <option value="232">Borough Hall</option>
+                <option value="233">Hoyt St</option>
+                <option value="234">Nevins St</option>
+                <option value="235">Atlantic Av - Barclays Ctr</option>
+                <option value="236">Bergen St</option>
+                <option value="237">Grand Army Plaza</option>
+                <option value="238">Eastern Pkwy - Brooklyn Museum</option>
+                <option value="239">Franklin Av</option>
+                <option value="241">President St</option>
+                <option value="242">Sterling St</option>
+                <option value="243">Winthrop St</option>
+                <option value="244">Church Av</option>
+                <option value="245">Beverly Rd</option>
+                <option value="246">Newkirk Av</option>
+                <option value="247">Flatbush Av - Brooklyn College</option>
+            </select>
+
+            <select id="dropdown3_2">
+                <option value="301" selected="true">Harlem - 148 St</option>
+                <option value="302">145 St</option>
+                <option value="224">135 St</option>
+                <option value="225">125 St</option>
+                <option value="226">116 St</option>
+                <option value="227">Central Park North (110 St)</option>
+                <option value="120">96 St</option>
+                <option value="123">72 St</option>
+                <option value="127">Time Square - 42 St</option>
+                <option value="128">34 St - Penn Station</option>
+                <option value="132">14 St</option>
+                <option value="137">Chambers St</option>
+                <option value="228">Park PI</option>
+                <option value="229">Fulton St</option>
+                <option value="230">Wall St</option>
+                <option value="231">Clark St</option>
+                <option value="232">Borough Hall</option>
+                <option value="233">Hoyt St</option>
+                <option value="234">Nevins St</option>
+                <option value="235">Atlantic Av - Barclays Ctr</option>
+                <option value="236">Bergen St</option>
+                <option value="237">Grand Army Plaza</option>
+                <option value="238">Eastern Pkwy - Brooklyn Museum</option>
+                <option value="239">Franklin Av</option>
+                <option value="248">Nostrand Av</option>
+                <option value="249">Kingston Av</option>
+                <option value="250">Crown Hts - Utica Av</option>
+                <option value="251">Sutter Av - Rutland Rd</option>
+                <option value="252">Saratoga Av</option>
+                <option value="253">Rockaway Av</option>
+                <option value="254">Junius St</option>
+                <option value="255">Pennsylvania Av</option>
+                <option value="256">Van Siclen Av</option>
+                <option value="257">New Lots Av</option>
+            </select>
+
+            <select id="dropdown4_2">
+                <option value="401" selected="true">Woodlawn</option>
+                <option value="402">Mosholu Pkwy</option>
+                <option value="405">Bedford Park Blvd - Lehman College</option>
+                <option value="406">Kingsbridge Rd</option>
+                <option value="407">Fordham Rd</option>
+                <option value="408">183 St</option>
+                <option value="409">Burnside Av</option>
+                <option value="410">176 St</option>
+                <option value="411">Mt Eden Av</option>
+                <option value="412">170 St</option>
+                <option value="413">167 St</option>
+                <option value="414">161 St - Yankee Stadium</option>
+                <option value="415">149 St - Grand Concourse</option>
+                <option value="416">138 St</option>
+                <option value="621">125 St</option>
+                <option value="622">116 St</option>
+                <option value="623">110 St</option>
+                <option value="624">103 St</option>
+                <option value="625">96 St</option>
+                <option value="626">86 St</option>
+                <option value="627">77 St</option>
+                <option value="628">68 St - Hunter College</option>
+                <option value="629">59 St</option>
+                <option value="630">51 St</option>
+                <option value="631">Grand Central - 42 St</option>
+                <option value="632">33 St</option>
+                <option value="633">28 St</option>
+                <option value="634">23 St</option>
+                <option value="635">14 St - Union Sq</option>
+                <option value="636">Astor PI</option>
+                <option value="637">Bleecker St</option>
+                <option value="638">Spring St</option>
+                <option value="639">Canal St</option>
+                <option value="640">Brooklyn Bridge - City Hall</option>
+            </select>
+
+            <select id="dropdown6_2">
+                <option value="601" selected="true">Pelham Bay Park</option>
+                <option value="602">Buhre Av</option>
+                <option value="603">Middletown Rd</option>
+                <option value="604">Westchester Sq - E Tremont Av</option>
+                <option value="606">Zerega Av</option>
+                <option value="607">Castle Hill Av</option>
+                <option value="608">Parkchester</option>
+                <option value="609">St Lawrence Av</option>
+                <option value="610">Morrison Av - Sound View</option>
+                <option value="611">Elder Av</option>
+                <option value="612">Whitlock Av</option>
+                <option value="613">Hunts Point Av</option>
+                <option value="614">Longwood Av</option>
+                <option value="615">E 149 St</option>
+                <option value="616">E 143 St - St Mary's St</option>
+                <option value="617">Cypress Av</option>
+                <option value="618">Brook Av</option>
+                <option value="619">3 Av - 138 St</option>
+                <option value="621">125 St</option>
+                <option value="622">116 St</option>
+                <option value="623">110 St</option>
+                <option value="624">103 St</option>
+                <option value="625">96 St</option>
+                <option value="626">86 St</option>
+                <option value="627">77 St</option>
+                <option value="628">68 St - Hunter College</option>
+                <option value="629">59 St</option>
+                <option value="630">51 St</option>
+                <option value="631">Grand Central - 42 St</option>
+                <option value="632">33 St</option>
+                <option value="633">28 St</option>
+                <option value="634">23 St</option>
+                <option value="635">14 St - Union Sq</option>
+                <option value="636">Astor PI</option>
+                <option value="637">Bleecker St</option>
+                <option value="638">Spring St</option>
+                <option value="639">Canal St</option>
+                <option value="640">Brooklyn Bridge - City Hall</option>
+            </select>
+
+            <br><br>
+
+<!--         <input type="text" class="textbox" id="startpoint" placeholder="Input your start point."><br><br>
+        <input type="text" class="textbox" id="endpoint" placeholder="Input your destination point."> -->
+<!--         <input type="button" id="update" value="Start DynamoDB"> -->
+        <input type="button" id="search1" value="Get Route">
+        <input type="button" id="search6" value="Get Route">
+<!--         <input type="text" id="show"> -->
+
+<!--         </form> -->
+
+        </div>
+        <div id="map">
+            <p id="show">This is the result.</p>
+        </div>
+
+        <div id="footer">
+            <p>Route Optimization and Visualization of New York City Subway</p>
+            <p>E-mail: zw2423@columbia.edu</p>
+        </div> 
+
+    </body>
+
+=
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        $('#dropdown2_1').hide();
+        $('#dropdown2_2').hide();
+        $('#dropdown3_1').hide();
+        $('#dropdown3_2').hide();
+        $('#dropdown4_1').hide();
+        $('#dropdown4_2').hide();
+        $('#dropdown6_1').hide();
+        $('#dropdown6_2').hide();
+        $('#search6').hide();
+
+
+
+
+
+    $(function(){
+        $('#submit').click(function(){
+            if(document.getElementById('dropdown1').value==1){
+                $('#dropdown2').show();
+                $('#dropdown3').show();
+                $('#dropdown2_1').hide();
+                $('#dropdown2_2').hide();
+                $('#dropdown3_1').hide();
+                $('#dropdown3_2').hide();
+                $('#dropdown4_1').hide();
+                $('#dropdown4_2').hide();
+                $('#dropdown6_1').hide();
+                $('#dropdown6_2').hide();
+            }
+            if(document.getElementById('dropdown1').value==2){
+                $('#dropdown2').hide();
+                $('#dropdown3').hide();
+                $('#dropdown2_1').show();
+                $('#dropdown2_2').show();
+                $('#dropdown3_1').hide();
+                $('#dropdown3_2').hide();
+                $('#dropdown4_1').hide();
+                $('#dropdown4_2').hide();
+                $('#dropdown6_1').hide();
+                $('#dropdown6_2').hide();
+            }
+            if(document.getElementById('dropdown1').value==3){
+                $('#dropdown2').hide();
+                $('#dropdown3').hide();
+                $('#dropdown2_1').hide();
+                $('#dropdown2_2').hide();
+                $('#dropdown3_1').show();
+                $('#dropdown3_2').show();
+                $('#dropdown4_1').hide();
+                $('#dropdown4_2').hide();
+                $('#dropdown6_1').hide();
+                $('#dropdown6_2').hide();
+            }
+            if(document.getElementById('dropdown1').value==4){
+                $('#dropdown2').hide();
+                $('#dropdown3').hide();
+                $('#dropdown2_1').hide();
+                $('#dropdown2_2').hide();
+                $('#dropdown3_1').hide();
+                $('#dropdown3_2').hide();
+                $('#dropdown4_1').show();
+                $('#dropdown4_2').show();
+                $('#dropdown6_1').hide();
+                $('#dropdown6_2').hide();
+            }
+            if(document.getElementById('dropdown1').value==6){
+                $('#dropdown2').hide();
+                $('#dropdown3').hide();
+                $('#dropdown2_1').hide();
+                $('#dropdown2_2').hide();
+                $('#dropdown3_1').hide();
+                $('#dropdown3_2').hide();
+                $('#dropdown4_1').hide();
+                $('#dropdown4_2').hide();
+                $('#dropdown6_1').show();
+                $('#dropdown6_2').show();
+                $('#search1').hide();
+                $('#search6').show();
+            }
+
+        });
+    });
+
+
+
+
+    $(function(){
+        $('#search1').click(function(){
+            
+                $.ajax({
+                url: '/testpy',
+                data:{
+                    a: $('#dropdown1').val(),
+                    b: $('#dropdown2').val(),
+                    c: $('#dropdown3').val()
+                },
+                dataType: 'JSON',
+                type: 'GET',
+                success: function(data){
+                    $("#show").html(data.result);
+                },
+                error: function(error){
+                    alert('error');
+                }
+                });
+            });
+    });
+
+
+
+
+    $(function(){
+        $('#search6').click(function(){
+            
+                $.ajax({
+                url: '/testpy',
+                data:{
+                    a: $('#dropdown1').val(),
+                    b: $('#dropdown6_1').val(),
+                    c: $('#dropdown6_2').val()
+                },
+                dataType: 'JSON',
+                type: 'GET',
+                success: function(data){
+                    $("#show").html(data.result);
+                },
+                error: function(error){
+                    alert('error');
+                }
+                });
+            });
+    });
+
+            
+
+
+
+
+
+
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjd5SBNpfG7y0DYdgffjrXU5vQiKMv5jk&callback=initMap">
+    </script>
+
+    </html>
