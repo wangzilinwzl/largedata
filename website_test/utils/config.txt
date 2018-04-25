@@ -1,0 +1,3 @@
+163430531586
+us-east-1:705b64a9-469e-48aa-908f-0299342adbef
+arn:aws:iam::163430531586:role/Cognito_MtaAppUnauth_Role
